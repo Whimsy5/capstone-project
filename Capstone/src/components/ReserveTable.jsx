@@ -9,16 +9,16 @@ import { useNavigate } from 'react-router-dom'
 
 const ReserveTable = () => {
 
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleButtonClick = () => {
+
     navigate('/confirmed');
   };
 
   const [value, onChange] = useState('10:00');
 
-  const guestInputId = useId();
-
+  const guestInputId = useId
 
   const dialogRef = useRef(null)
   const dialogId = useId()
@@ -79,6 +79,7 @@ const navigate = useNavigate();
 
 
         <div className='mt-4'>
+
           <label htmlFor="date-input">
             <strong className='text-[#ffffff]'>Choose Date: </strong>
           </label>
@@ -90,6 +91,7 @@ const navigate = useNavigate();
             placeholder="MM/dd/yyyy"
             onChange={handleInputChange}
           />{" "}
+
           <button
             style={{ fontSize: "inherit" }}
             onClick={toggleDialog}
@@ -100,6 +102,7 @@ const navigate = useNavigate();
           >
             📆
           </button>
+
           <p className='text-sm font-semibold text-[#EE9972]' aria-live="assertive" aria-atomic="true">
             {selectedDate !== undefined
               ? selectedDate.toDateString()
@@ -131,58 +134,65 @@ const navigate = useNavigate();
             />
           </dialog>
 
-          <div className='mt-4'>
-            <label htmlFor="time-input">
-              <strong className='text-[#ffffff]'>Choose Time: </strong>
-            </label>
+        </div>
+        <div className='mt-4'>
+          <label htmlFor="time-input">
+            <strong className='text-[#ffffff]'>Choose Time: </strong>
+          </label>
 
-            <input id='time-input'
-              aria-label="Time"
-              type="time"
-            />
+          <input id='time-input'
+            aria-label="Time"
+            type="time"
+          />
 
-          </div>
+        </div>
 
-          <div className='mt-4'>
-            <label htmlFor={guestInputId} className='font-semibold text-[#ffffff]'>Number of Guests:   </label>
-            <input id={guestInputId} name="guest" type="number" />
-
-          </div>
-
-          <div className='flex mt-4'>
-            <form className='max-w-sm min-auto'>
-              <label for='events' className='font-bold text-[#EDEFEE]'>Select an Occasion:</label>
-
-              <select id="events" className='font-extrabold text-[#144B33]  border border-[#FBDABB] focus:ring-[#EDEFEE] focus:border-[#EDEFEE] bg-[#EDEFEE] dark:bg-[#EDEFEE] block w-full p-2.5 text-md rounded-lg dark:border-[#EE9972] dark:placeholder-[#EDEFEE] dark:focus:ring-[#EE9972] dark:focus-border-[EE9972] dark:text-[#495E57]'>
+        <div className='mt-4'>
+          <label htmlFor={guestInputId} className='font-semibold text-[#ffffff]'>Number of Guests:   </label>
+          <input id={guestInputId}
+            name='guest'
+            type="number"
 
 
-                <option selected>
+          />
 
-                  Occasion</option>
-                <option>Birthday</option>
-                <option>Engagement</option>
-                <option>Anniversary</option>
+        </div>
+
+        <div className='flex mt-4'>
+          <form className='max-w-sm min-auto'>
+            <label for='events' className='font-bold text-[#EDEFEE]'>Select an Occasion:</label>
+
+            <select id="events" className='font-extrabold text-[#144B33]  border border-[#FBDABB] focus:ring-[#EDEFEE] focus:border-[#EDEFEE] bg-[#EDEFEE] dark:bg-[#EDEFEE] block w-full p-2.5 text-md rounded-lg dark:border-[#EE9972] dark:placeholder-[#EDEFEE] dark:focus:ring-[#EE9972] dark:focus-border-[EE9972] dark:text-[#495E57]'>
 
 
+              <option selected>
 
-              </select>
-
-            </form>
-          </div>
-
-          <div>
-            <button onClick={handleButtonClick} className='focus:outline-none focus:ring-2 focus:ring-[#F4CE14]-300 mt-4 cursor-pointer flex bg-[#F4CE14] hover:text-[#ffffff] font-bold text-xs py-2 px-4 rounded'>Make Your Reservation</button>
-          </div>
+                Occasion</option>
+              <option>Birthday</option>
+              <option>Engagement</option>
+              <option>Anniversary</option>
 
 
 
-
-
+            </select>
+          </form>
 
 
         </div>
+
+        <div>
+          <button disabled={!inputValue} onClick={handleButtonClick} className='focus:outline-none focus:ring-2 focus:ring-[#F4CE14]-300 mt-4 cursor-pointer flex bg-[#F4CE14] hover:text-[#ffffff] font-bold text-xs py-2 px-4 rounded'>Make Your Reservation</button>
+        </div>
+
+
+
+
+
+
+
       </div>
     </div>
+
   )
 }
 
