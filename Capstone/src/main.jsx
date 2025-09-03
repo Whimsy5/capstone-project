@@ -5,6 +5,8 @@ import { BrowserRouter } from 'react-router-dom'
 
 
 import ReactDOM from 'react-dom/client';
+import ReserveTable from './components/ReserveTable.jsx';
+import Confirmed from './components/Confirmed.jsx';
 
 
 
@@ -14,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 
       <App />
+      
 
 
 
