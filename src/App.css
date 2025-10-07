@@ -1,0 +1,17 @@
+body{
+    font-family: "Karla", sans-serif;
+    background-color: #EDEFEE;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    
+    
+    /*align-items: center;*/
+    /*padding: 5px lg;*/
+    /*padding-inline: 32;*/
+    justify-items: center;
+    
+}
