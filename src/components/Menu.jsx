@@ -5,10 +5,10 @@ const Menu = () => {
   return (
     <div className='min-h-screen flex flex-col justify-center lg:px-32 px-5 bg-white'>
       <div className='flex  mt-24 mb-8 justify-evenly '>
-      <h1 className='font-semibold  text-5xl '>This weeks specials!</h1>
-      
+        <h1 className='font-semibold  text-5xl '>This weeks specials!</h1>
+
         <span><button className=' text-xs cursor-pointer flex bg-[#F4CE14] hover:text-[#ffffff] font-semibold py-2 px-4 rounded'>Online Menu</button></span>
-      
+
       </div>
       <div className='flex flex-wrap pb-8 gap-12 justify-center'>
         <MenuCard
@@ -24,8 +24,8 @@ const Menu = () => {
           title='Bruchetta'
           price='$5.99'
           paragraph='Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. '
-          
-          />
+
+        />
 
 
 

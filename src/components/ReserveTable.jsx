@@ -1,26 +1,28 @@
-import React from 'react'
-import { useState } from 'react';
+import React,  { useState }  from 'react'
+
 import { useNavigate } from 'react-router-dom'
 
 const ReserveTable = (props) => {
 
 
   const [date, setDate] = useState('')
+  
+
   const [times, setTimes] = useState('')
   const [guests, setGuests] = useState('')
   const [occasion, setOccasion] = useState('')
-  
+
 
   const handleChange = (e) => {
-  /*const newDate= e.target.value;*/
-  setDate(e);
-  props.dispatch(e)
+    /*const newDate= e.target.value;*/
+    setDate(e);
+    props.dispatch(e)
 
-}
+  }
 
 
-  
-   
+
+
 
   /*const [selectedValues, setSelectedValues] = useState({
     choosedate: '',
@@ -71,7 +73,7 @@ const ReserveTable = (props) => {
               required
               name='date'
               value={date}
-              
+
             />
 
 
@@ -91,12 +93,12 @@ const ReserveTable = (props) => {
               name='res-time'
             >
 
-              
-              
+
+
 
               {props.availableTimes.availableTimes.map(availableTimes => (
                 <option key={availableTimes}> {availableTimes}
-                  
+
                 </option>)
               )
               }
@@ -107,7 +109,7 @@ const ReserveTable = (props) => {
           <div>
             <label htmlFor='guests' className='font-semibold text-[#ffffff]'>Number of Guests:  </label>
             <input id='guest'
-            value={guests}
+              value={guests}
               placeholder='1'
               min='1'
               max='10'
@@ -126,7 +128,7 @@ const ReserveTable = (props) => {
             <label htmlFor='events' className='font-bold text-[#EDEFEE]'>Select an Occasion:</label>
 
             <select id="events"
-            value={occasion}
+              value={occasion}
               className='font-extrabold text-[#144B33]  border border-[#FBDABB] focus:ring-[#EDEFEE] focus:border-[#EDEFEE] bg-[#EDEFEE] dark:bg-[#EDEFEE] block w-full p-2.5 text-md rounded-lg dark:border-[#EE9972] dark:placeholder-[#EDEFEE] dark:focus:ring-[#EE9972] dark:focus-border-[EE9972] dark:text-[#495E57]'
               onChange={(e) => setOccasion(e.target.value)}
               required
@@ -150,7 +152,7 @@ const ReserveTable = (props) => {
           </div>
 
           <div>
-            <button  className='focus:outline-none focus:ring-2 focus:ring-[#F4CE14]-300 mt-4 cursor-pointer flex bg-[#F4CE14] hover:text-[#ffffff] font-bold text-xs py-2 px-4 rounded' type='submit'>Make Your Reservation</button>
+            <button className='focus:outline-none focus:ring-2 focus:ring-[#F4CE14]-300 mt-4 cursor-pointer flex bg-[#F4CE14] hover:text-[#ffffff] font-bold text-xs py-2 px-4 rounded' type='submit'>Make Your Reservation</button>
           </div>
 
 

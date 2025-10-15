@@ -1,16 +1,16 @@
-<<<<<<< HEAD
-# capstone-project
-=======
-# React + Vite
+#  Capstone Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# a. Description
 
-Currently, two official plugins are available:
+Hello, this project was created as the Meta Front-end development course capstone project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The website implements a table booking application for the Little Lemon website to enable customers to book a table by filling in a form.
 
-## Expanding the ESLint configuration
+# b. Frameworks used:
+The website is created using React components, TailwindCss and Vite frameworks. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> master
+# c. Functionality.
+The Navigation section is quite flexible with each click scrolling to the specific component.
+The Reserve Table button is clickable which redirects to the Booking form which is working.
+
+
