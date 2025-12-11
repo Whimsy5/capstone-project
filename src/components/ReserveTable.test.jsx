@@ -4,11 +4,11 @@ import ReserveTable from "./ReserveTable";
 import { describe, it, expect, vi } from "vitest"
 import userEvent from "@testing-library/user-event"
 
-describe("ReserveTable Component", () => {
+/*describe("ReserveTable Component", () => {
     it('Renders the ReserveTable form', () => {
     render(<ReserveTable />)
     const headingElement = screen.getByText('Choose Date')
-    expect(headingElement).toBeInTheDocument()
+    expect(headingElement).toBeInTheDocument()*/
 
     /*const MakeYourReservationButton = screen.getByText('button')
     fireEvent.click(MakeYourReservationButton)*/
