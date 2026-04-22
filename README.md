@@ -14,3 +14,15 @@ The Navigation section is quite flexible with each click scrolling to the specif
 The Reserve Table button is clickable which redirects to the Booking form which is working.
 
 
+
+
+
+https://github.com/user-attachments/assets/7bb980cb-64eb-4f7b-91a4-56d2bd01231a
+
+
+
+
+
+
+
+
