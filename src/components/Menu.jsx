@@ -3,7 +3,7 @@ import { MdDeliveryDining } from "react-icons/md";
 import MenuCard from '../layouts/MenuCard'
 import salad from '../images/images/greek salad.jpg'
 import bruchetta from '../images/images/bruchetta.svg'
-import dessert from '../images/images/lemon dessert.jpg'
+import dessert from '../images/images/Lemon dessert.jpg'
 
 
 const Menu = () => {
