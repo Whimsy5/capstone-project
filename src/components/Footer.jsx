@@ -1,11 +1,13 @@
 import React from 'react'
+import logo from '../images/images/Logo .svg'
+
 
 const Footer = () => {
   return (
     <div className='bg-[#EDEFEE] text-[#333333] rounded-t-3xl mt-8 md:mt-0'>
       <div className='flex flex-col md:flex-row justify-between p-8 md:px-32 px-5'>
         <div className='w-full md:w-1/4'>
-          <img className='pb-4' src='\src\images\images\Logo.svg' alt='logo' />
+        <img className='pb-4' src={logo} alt='logo' />
         </div>
         <div>
           <h1 className='font-medium text-l pb-4 pt-5 md:pt-0 text-[#495E57] lg:font-bold'>Doormat Navigation</h1>

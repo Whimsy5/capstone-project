@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import restauranfood from '../images/images/restauranfood 2.jpg'
 
 
 
@@ -25,7 +26,7 @@ const Home = () => {
       </div>
 
       <div className=' relative h-65 w-65 mt-14'>
-        <img src='\src\images\images\restauranfood 2.jpg' alt='restaurant food' className='rounded' />
+        <img src={restauranfood} alt='restaurant food' className='rounded' />
       </div>
     </div>
 

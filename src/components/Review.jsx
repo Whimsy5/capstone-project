@@ -1,5 +1,9 @@
 import React from 'react'
 import ReviewCard from '../layouts/ReviewCard'
+import phota from '../images/images/phot 1.jpg'
+import photb from '../images/images/phot 2.jpg'
+import photc from '../images/images/phot 3.jpg'
+
 
 
 const Review = () => {
@@ -9,17 +13,17 @@ const Review = () => {
 
             <div className='flex flex-col lg:flex-row gap-5 justify-center py-4 my-8 ' >
                 <ReviewCard
-                    img='\src\images\images\phot 1.jpg'
+                    img={phota}
                     title='James Paul'
                     paragraph='Tasty food, would recommend.'
                 />
                 <ReviewCard
-                    img='\src\images\images\phot 2.jpg'
+                    img={photb}
                     title='John Prutvi'
                     paragraph='The quality of the  food and service is amazing!'
                 />
                 <ReviewCard
-                    img='\src\images\images\phot 3.jpg'
+                    img={photc}
                     title='Anna Tilly'
                     paragraph='The most delicious desserts I’ve had!'
                 />

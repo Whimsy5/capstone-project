@@ -1,6 +1,11 @@
 import React from 'react'
 import { MdDeliveryDining } from "react-icons/md";
 import MenuCard from '../layouts/MenuCard'
+import salad from '../images/images/greek salad.jpg'
+import bruchetta from '../images/images/bruchetta.svg'
+import dessert from '../images/images/lemon dessert.jpg'
+
+
 const Menu = () => {
   return (
     <div className='min-h-screen flex flex-col justify-center lg:px-32 px-5 bg-white'>
@@ -12,7 +17,7 @@ const Menu = () => {
       </div>
       <div className='flex flex-wrap pb-8 gap-12 justify-center'>
         <MenuCard
-          img='\src\images\images\greek salad.jpg'
+          img={salad}
           title='Greek Salad'
           price='$12.99'
           paragraph='The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and croutons. ' />
@@ -20,7 +25,7 @@ const Menu = () => {
 
 
         <MenuCard
-          img='\src\images\images\bruchetta.svg'
+          img={bruchetta}
           title='Bruchetta'
           price='$5.99'
           paragraph='Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. '
@@ -30,7 +35,7 @@ const Menu = () => {
 
 
         <MenuCard
-          img='\src\images\images\lemon dessert.jpg'
+          img={dessert}
           title='Lemon Dessert'
           price='$5.00'
           paragraph='This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.' />

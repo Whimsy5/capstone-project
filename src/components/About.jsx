@@ -1,4 +1,6 @@
 import React from 'react'
+import chefb from '../images/images/restaurant chef B.jpg'
+import restaurant from '../images/images/restaurant.jpg'
 
 const About = () => {
     return (
@@ -17,8 +19,8 @@ const About = () => {
 
                 </div>
                 <div className='flex  relative '>
-                    <img src='\src\images\images\restaurant chef B.jpg' alt='img' className='h-48 w-42 mt-24' />
-                    <img src='\src\images\images\restaurant.jpg' alt='img' className='h-48 w-40 absolute top-0  right-0 left-2/3' />
+                    <img src={chefb} alt='img' className='h-48 w-42 mt-24' />
+                    <img src={restaurant} alt='img' className='h-48 w-40 absolute top-0  right-0 left-2/3' />
 
                 </div>
             </div>

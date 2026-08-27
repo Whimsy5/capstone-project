@@ -4,6 +4,8 @@ import { Link } from 'react-scroll'
 import { AiOutlineClose } from "react-icons/ai"
 import { AiOutlineMenuUnfold } from 'react-icons/ai';
 import { useState } from 'react';
+import logo from '../images/images/Logo .svg'
+
 
 
 const Navbar = () => {
@@ -29,7 +31,7 @@ const Navbar = () => {
 
 
             <a href='/' size={25}>
-              <img src='\src\images\images\Logo .svg' alt='logo' />
+              <img src={logo} alt='logo' />
             </a>
 
           </div>
